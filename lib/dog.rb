@@ -7,6 +7,11 @@ class Dog
     @@all <<  self
   end
 
+  def self.clear_all
+    @@all.clear
+    @@all = []
+  end
+
   def self.all
 
     puts @@all.map { |dog| dog.name }
@@ -14,7 +19,3 @@ class Dog
     end
   end
 
-  def self.clear_all
-    @@all.clear
-    @@all = []
-  end
